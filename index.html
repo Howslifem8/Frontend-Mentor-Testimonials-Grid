@@ -6,8 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-<!--   <link rel="preload" href="/styles.css" as="style"> -->
-  <link rel="stylesheet" type="text/css" href="./styles.css" >
+  <!-- <link rel="preload" href="/styles.css" as="style">
+  <link rel="stylesheet" type="text/css" href="/styles.css" > -->
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -15,6 +15,149 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-family: system-ui, sans-serif;
+    font-size: 13px;
+    background-color: hsl(214, 17%, 92%);
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(0, 0%, 81%);
+  }
+  
+  img, picture, video, canvas, svg {
+    max-width: 100%;
+    display: block;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.card{ 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);   
+    padding: 30px;
+    border-radius: 5%;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 15px;
+    padding-top: 4rem;
+    margin: 0;
+    background-color: inherit;
+}
+
+.container > div{
+    padding: 2rem;
+}
+
+.profile-img {
+    max-width: 15%;
+    max-height: 15%;
+    border-radius: 50%;
+    border: 3px solid ;
+    border-color:hsl(264, 82%, 80%) ;
+    float: left;
+}
+
+.user-details{ 
+ display: flex;
+ flex-direction: column;
+ align-items: left;
+ padding-left: 10%;
+ background-color: inherit;
+}
+
+
+
+.highlight-text{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.purp {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(260, 100%, 95%);
+}
+
+.grey{
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(214, 17%, 92%);
+}
+
+.white{
+  color: hsl(217, 19%, 35%);
+  background-color: white !important;
+}
+
+.dark-blue{
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(214, 17%, 92%);
+}
+
+@media only screen and (min-width: 800px) {
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px;
+  /* padding-top: 4rem; */
+}
+
+.container > div{
+  padding: 2rem;
+  /* border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.wide{
+  grid-column: 1 / span 2;
+}
+
+.dark-blue{
+  grid-column: 2 / span 2; /* Spans 2 Columns */
+  grid-row: 2; /* Stays in the second row */
+}
+
+.long{
+  grid-column: 4 / 5;
+  grid-row: 1/ span 2;
+}
+
+
+}
+
+
   </style>
 </head>
 <body class="container">
